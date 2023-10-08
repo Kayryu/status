@@ -17,6 +17,12 @@ sites:
   - name: Alpha Net HTTP endpoint
     check: "tcp-ping"
     url: "alpha-rpc-node-http.bool.network"
+  - name: Test Net WS endpoint
+    check: "tcp-ping"
+    url: "test-rpc-node-ws.bool.network"
+  - name: Test Net HTTP endpoint
+    check: "tcp-ping"
+    url: "test-rpc-node-http.bool.network"
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
